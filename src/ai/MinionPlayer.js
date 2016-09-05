@@ -158,7 +158,7 @@ module.exports = class MinionPlayer extends PlayerTracker {
             if (dist < 300) {
               this.predators.push(check);
               if ((this.cells.length == 1) && (dist < 0)) {
-                this.juke = true;
+                this.juke = false;
               }
             }
             this.threats.push(check);
